@@ -1,0 +1,35 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://ri-www.nii.ac.jp/ADAS/sensor#Engine" "http://ri-www.nii.ac.jp/ADAS/sensor#Sonar" "http://ri-www.nii.ac.jp/ADAS/sensor#Truck" "http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory" "http://ri-www.nii.ac.jp/ADAS/sensor#GPSTrack" "http://ri-www.nii.ac.jp/ADAS/sensor#SmoothDeceleration" "http://ri-www.nii.ac.jp/ADAS/sensor#Bicycle" "http://ri-www.nii.ac.jp/ADAS/sensor#Automobile" "http://ri-www.nii.ac.jp/ADAS/sensor#SuddenAcceleration" "car:SpecialVehicle" "http://ri-www.nii.ac.jp/ADAS/sensor#Lidar" "http://ri-www.nii.ac.jp/ADAS/sensor#Motorcycle" "http://ri-www.nii.ac.jp/ADAS/sensor#ConstantSpeed" "car:RegularVehicle" "http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile" "car:Acceleration" "http://ri-www.nii.ac.jp/ADAS/sensor#SmoothAcceleration" "http://ri-www.nii.ac.jp/ADAS/sensor#Bus" "car:MyCar" "http://ri-www.nii.ac.jp/ADAS/sensor#CarParts" "http://ri-www.nii.ac.jp/ADAS/sensor#Path" "http://ri-www.nii.ac.jp/ADAS/sensor#SmallSpecialVehicle" "http://ri-www.nii.ac.jp/ADAS/sensor#Sensor" "http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar" "http://ri-www.nii.ac.jp/ADAS/sensor#GPS" "http://ri-www.nii.ac.jp/ADAS/sensor#LargeSpecialVehicle" "http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle" "http://ri-www.nii.ac.jp/ADAS/sensor#Car" "car:Deceleration" "http://ri-www.nii.ac.jp/ADAS/sensor#CAN" "http://ri-www.nii.ac.jp/ADAS/sensor#Camera" "http://ri-www.nii.ac.jp/ADAS/sensor#SuddenDeceleration" ; /*classes style*/
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Car" -> "http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#SmallSpecialVehicle" -> "car:SpecialVehicle" [ label = "rdfs:subClassOf" ];
+	"car:Deceleration" -> "http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#ConstantSpeed" -> "http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile" [ label = "rdfs:subClassOf" ];
+	"car:Acceleration" -> "http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Sensor" -> "http://ri-www.nii.ac.jp/ADAS/sensor#CarParts" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile" -> "http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Engine" -> "http://ri-www.nii.ac.jp/ADAS/sensor#CarParts" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#CAN" -> "http://ri-www.nii.ac.jp/ADAS/sensor#Sensor" [ label = "rdfs:subClassOf" ];
+	"car:SpecialVehicle" -> "http://ri-www.nii.ac.jp/ADAS/sensor#Automobile" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Automobile" -> "http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#GPS" -> "http://ri-www.nii.ac.jp/ADAS/sensor#Sensor" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#SuddenAcceleration" -> "car:Acceleration" [ label = "rdfs:subClassOf" ];
+	"car:MyCar" -> "http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#LargeSpecialVehicle" -> "car:SpecialVehicle" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#SmoothAcceleration" -> "car:Acceleration" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Truck" -> "http://ri-www.nii.ac.jp/ADAS/sensor#Automobile" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Bicycle" -> "http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#SuddenDeceleration" -> "car:Deceleration" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Motorcycle" -> "http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar" -> "car:RegularVehicle" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Camera" -> "http://ri-www.nii.ac.jp/ADAS/sensor#Sensor" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Lidar" -> "http://ri-www.nii.ac.jp/ADAS/sensor#Sensor" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#SmoothDeceleration" -> "car:Deceleration" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#GPSTrack" -> "http://ri-www.nii.ac.jp/ADAS/sensor#Path" [ label = "rdfs:subClassOf" ];
+	"car:RegularVehicle" -> "http://ri-www.nii.ac.jp/ADAS/sensor#Automobile" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Sonar" -> "http://ri-www.nii.ac.jp/ADAS/sensor#Sensor" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Path" -> "http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory" [ label = "rdfs:subClassOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Bus" -> "http://ri-www.nii.ac.jp/ADAS/sensor#Automobile" [ label = "rdfs:subClassOf" ];
+
+}

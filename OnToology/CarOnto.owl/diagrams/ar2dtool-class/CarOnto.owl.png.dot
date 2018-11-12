@@ -1,0 +1,26 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "http://ri-www.nii.ac.jp/ADAS/sensor#Car" ; /*classes style*/
+	"http://ri-www.nii.ac.jp/ADAS/Car" -> "http://ri-www.nii.ac.jp/ADAS/Car/0.04" [ label = "owl:versionIRI" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#front_overhang" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#car_model" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#car_length" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#rear_overhang" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"car:distance_back" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#wheel_base" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#throttle" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#gear" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"car:carID" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#car_height" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#steer_angle" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#brake" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#height_max" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Car" -> "http://ri-www.nii.ac.jp/ADAS/sensor#mm" [ label = "http://ri-www.nii.ac.jp/ADAS/sensor#front_overhang" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Car" -> "owl:Thing" [ label = "http://ri-www.nii.ac.jp/ADAS/sensor#car_model" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Car" -> "http://ri-www.nii.ac.jp/ADAS/sensor#mm" [ label = "http://ri-www.nii.ac.jp/ADAS/sensor#car_height" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Car" -> "http://ri-www.nii.ac.jp/ADAS/sensor#mm" [ label = "http://ri-www.nii.ac.jp/ADAS/sensor#wheel_base" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Car" -> "http://ri-www.nii.ac.jp/ADAS/sensor#mm" [ label = "http://ri-www.nii.ac.jp/ADAS/sensor#rear_overhang" ];
+	"http://ri-www.nii.ac.jp/ADAS/sensor#Car" -> "http://ri-www.nii.ac.jp/ADAS/sensor#mm" [ label = "http://ri-www.nii.ac.jp/ADAS/sensor#car_length" ];
+
+}

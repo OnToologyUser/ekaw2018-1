@@ -1,0 +1,266 @@
+<http://ri-www.nii.ac.jp/ADAS/Car> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://ri-www.nii.ac.jp/ADAS/Car> <http://www.w3.org/2002/07/owl#versionIRI> <http://ri-www.nii.ac.jp/ADAS/Car/0.04> .
+<http://ri-www.nii.ac.jp/ADAS/Car> <http://purl.org/dc/elements/1.1/contributor> "Dr. Hiroaki Wagatsuma, Associate Professor (Kyutech)\n\t\t\tDr. Ryutaro Ichise, Associate Professor (NII)" .
+<http://ri-www.nii.ac.jp/ADAS/Car> <http://purl.org/dc/terms/creator> "Dr. Lihua Zhao, Postdoctoral researcher (TTI)\n\t\t\tDr. Yutaka Sasaki, Director & Professor (TTI)" .
+<http://ri-www.nii.ac.jp/ADAS/Car> <http://purl.org/dc/terms/license> "Copyright (C) 2015 Computational Intelligence Laboratory,\n\t\t\tToyota Technological Institute, Nagoya, Japan./\n\t\t\tOn Modified Part: Copyright (C) 2016 Graduate School of Life Science and Systems Engineering,\n\t\t\tKyushu Institute of Technology, Kitakyushu, Japan & Ichise Laboratory, National Institute of Informatics, Tokyo, Japan\n\n\t\t\tThis work is licensed under Creative Commons - Attribution-NonCommercial-ShareAlike\n\t\t\t4.0 International (http://creativecommons.org/licenses/by-nc-sa/4.0/). " .
+<http://ri-www.nii.ac.jp/ADAS/Car> <http://purl.org/dc/terms/publisher> "Ichise Laboratory, National Insititute of Informatics" .
+<http://ri-www.nii.ac.jp/ADAS/Car> <http://www.w3.org/2000/01/rdf-schema#label> "Car Ontology" .
+<http://ri-www.nii.ac.jp/ADAS/Car> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://ceur-ws.org/Vol-1486/paper_9.pdf" .
+<http://ri-www.nii.ac.jp/ADAS/Car> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://ceur-ws.org/Vol-1690/paper44.pdf" .
+<http://ri-www.nii.ac.jp/ADAS/Car> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://doi.org/10.1587/transinf.2016EDP7337" .
+<http://ri-www.nii.ac.jp/ADAS/Car> <http://www.w3.org/2002/07/owl#versionInfo> "Kyutech-NII-TTI Core: Car Ontology (v0.04)" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#mm
+<http://ri-www.nii.ac.jp/ADAS/sensor#mm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://ri-www.nii.ac.jp/ADAS/Car#currentPath
+<http://ri-www.nii.ac.jp/ADAS/Car#currentPath> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/Car#isRunningOn
+<http://ri-www.nii.ac.jp/ADAS/Car#isRunningOn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/Car#usedSensor
+<http://ri-www.nii.ac.jp/ADAS/Car#usedSensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://ri-www.nii.ac.jp/ADAS/Car#carID
+<http://ri-www.nii.ac.jp/ADAS/Car#carID> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ri-www.nii.ac.jp/ADAS/Car#carID> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/Car#distance_back
+<http://ri-www.nii.ac.jp/ADAS/Car#distance_back> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ri-www.nii.ac.jp/ADAS/Car#distance_back> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/Car#distance_front
+<http://ri-www.nii.ac.jp/ADAS/Car#distance_front> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/Car#velocity
+<http://ri-www.nii.ac.jp/ADAS/Car#velocity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#brake
+<http://ri-www.nii.ac.jp/ADAS/sensor#brake> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#brake> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#car_height
+<http://ri-www.nii.ac.jp/ADAS/sensor#car_height> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#car_height> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#car_height> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ri-www.nii.ac.jp/ADAS/sensor#Car> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#car_height> <http://www.w3.org/2000/01/rdf-schema#range> <http://ri-www.nii.ac.jp/ADAS/sensor#mm> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#car_length
+<http://ri-www.nii.ac.jp/ADAS/sensor#car_length> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#car_length> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#car_length> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ri-www.nii.ac.jp/ADAS/sensor#Car> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#car_length> <http://www.w3.org/2000/01/rdf-schema#range> <http://ri-www.nii.ac.jp/ADAS/sensor#mm> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#car_model
+<http://ri-www.nii.ac.jp/ADAS/sensor#car_model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#car_model> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#car_model> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ri-www.nii.ac.jp/ADAS/sensor#Car> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#front_overhang
+<http://ri-www.nii.ac.jp/ADAS/sensor#front_overhang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#front_overhang> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#front_overhang> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ri-www.nii.ac.jp/ADAS/sensor#Car> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#front_overhang> <http://www.w3.org/2000/01/rdf-schema#range> <http://ri-www.nii.ac.jp/ADAS/sensor#mm> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#gear
+<http://ri-www.nii.ac.jp/ADAS/sensor#gear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#gear> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#height_max
+<http://ri-www.nii.ac.jp/ADAS/sensor#height_max> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#height_max> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#rear_overhang
+<http://ri-www.nii.ac.jp/ADAS/sensor#rear_overhang> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#rear_overhang> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#rear_overhang> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ri-www.nii.ac.jp/ADAS/sensor#Car> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#rear_overhang> <http://www.w3.org/2000/01/rdf-schema#range> <http://ri-www.nii.ac.jp/ADAS/sensor#mm> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#steer_angle
+<http://ri-www.nii.ac.jp/ADAS/sensor#steer_angle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#steer_angle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#throttle
+<http://ri-www.nii.ac.jp/ADAS/sensor#throttle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#throttle> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#wheel_base
+<http://ri-www.nii.ac.jp/ADAS/sensor#wheel_base> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#wheel_base> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#wheel_base> <http://www.w3.org/2000/01/rdf-schema#domain> <http://ri-www.nii.ac.jp/ADAS/sensor#Car> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#wheel_base> <http://www.w3.org/2000/01/rdf-schema#range> <http://ri-www.nii.ac.jp/ADAS/sensor#mm> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://ri-www.nii.ac.jp/ADAS/Car#Acceleration
+<http://ri-www.nii.ac.jp/ADAS/Car#Acceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/Car#Acceleration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/Car#Deceleration
+<http://ri-www.nii.ac.jp/ADAS/Car#Deceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/Car#Deceleration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/Car#MyCar
+<http://ri-www.nii.ac.jp/ADAS/Car#MyCar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/Car#MyCar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/Car#RegularVehicle
+<http://ri-www.nii.ac.jp/ADAS/Car#RegularVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/Car#RegularVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#Automobile> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/Car#SpecialVehicle
+<http://ri-www.nii.ac.jp/ADAS/Car#SpecialVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/Car#SpecialVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#Automobile> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#Automobile
+<http://ri-www.nii.ac.jp/ADAS/sensor#Automobile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#Automobile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#Bicycle
+<http://ri-www.nii.ac.jp/ADAS/sensor#Bicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#Bicycle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#Bus
+<http://ri-www.nii.ac.jp/ADAS/sensor#Bus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#Bus> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#Automobile> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#CAN
+<http://ri-www.nii.ac.jp/ADAS/sensor#CAN> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#CAN> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#Sensor> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#Camera
+<http://ri-www.nii.ac.jp/ADAS/sensor#Camera> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#Camera> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#Sensor> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#Car
+<http://ri-www.nii.ac.jp/ADAS/sensor#Car> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#Car> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#CarParts
+<http://ri-www.nii.ac.jp/ADAS/sensor#CarParts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#ConstantSpeed
+<http://ri-www.nii.ac.jp/ADAS/sensor#ConstantSpeed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#ConstantSpeed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#Engine
+<http://ri-www.nii.ac.jp/ADAS/sensor#Engine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#Engine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#CarParts> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#GPS
+<http://ri-www.nii.ac.jp/ADAS/sensor#GPS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#GPS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#Sensor> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#GPSTrack
+<http://ri-www.nii.ac.jp/ADAS/sensor#GPSTrack> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#GPSTrack> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#Path> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#LargeSpecialVehicle
+<http://ri-www.nii.ac.jp/ADAS/sensor#LargeSpecialVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#LargeSpecialVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/Car#SpecialVehicle> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#Lidar
+<http://ri-www.nii.ac.jp/ADAS/sensor#Lidar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#Lidar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#Sensor> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#Motorcycle
+<http://ri-www.nii.ac.jp/ADAS/sensor#Motorcycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#Motorcycle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar
+<http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/Car#RegularVehicle> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#Path
+<http://ri-www.nii.ac.jp/ADAS/sensor#Path> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#Path> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#Sensor
+<http://ri-www.nii.ac.jp/ADAS/sensor#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#CarParts> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#SmallSpecialVehicle
+<http://ri-www.nii.ac.jp/ADAS/sensor#SmallSpecialVehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#SmallSpecialVehicle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/Car#SpecialVehicle> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#SmoothAcceleration
+<http://ri-www.nii.ac.jp/ADAS/sensor#SmoothAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#SmoothAcceleration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/Car#Acceleration> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#SmoothDeceleration
+<http://ri-www.nii.ac.jp/ADAS/sensor#SmoothDeceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#SmoothDeceleration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/Car#Deceleration> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#Sonar
+<http://ri-www.nii.ac.jp/ADAS/sensor#Sonar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#Sonar> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#Sensor> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile
+<http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#SuddenAcceleration
+<http://ri-www.nii.ac.jp/ADAS/sensor#SuddenAcceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#SuddenAcceleration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/Car#Acceleration> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#SuddenDeceleration
+<http://ri-www.nii.ac.jp/ADAS/sensor#SuddenDeceleration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#SuddenDeceleration> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/Car#Deceleration> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory
+<http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#Truck
+<http://ri-www.nii.ac.jp/ADAS/sensor#Truck> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://ri-www.nii.ac.jp/ADAS/sensor#Truck> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://ri-www.nii.ac.jp/ADAS/sensor#Automobile> .
+# 
+# http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle
+<http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

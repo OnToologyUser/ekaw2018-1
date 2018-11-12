@@ -1,0 +1,310 @@
+@prefix : <http://ri-www.nii.ac.jp/ADAS/Car#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://ri-www.nii.ac.jp/ADAS/Car> .
+
+<http://ri-www.nii.ac.jp/ADAS/Car> rdf:type owl:Ontology ;
+                                    owl:versionIRI <http://ri-www.nii.ac.jp/ADAS/Car/0.04> ;
+                                    <http://purl.org/dc/elements/1.1/contributor> """Dr. Hiroaki Wagatsuma, Associate Professor (Kyutech)
+			Dr. Ryutaro Ichise, Associate Professor (NII)""" ;
+                                    <http://purl.org/dc/terms/creator> """Dr. Lihua Zhao, Postdoctoral researcher (TTI)
+			Dr. Yutaka Sasaki, Director & Professor (TTI)""" ;
+                                    <http://purl.org/dc/terms/license> """Copyright (C) 2015 Computational Intelligence Laboratory,
+			Toyota Technological Institute, Nagoya, Japan./
+			On Modified Part: Copyright (C) 2016 Graduate School of Life Science and Systems Engineering,
+			Kyushu Institute of Technology, Kitakyushu, Japan & Ichise Laboratory, National Institute of Informatics, Tokyo, Japan
+
+			This work is licensed under Creative Commons - Attribution-NonCommercial-ShareAlike
+			4.0 International (http://creativecommons.org/licenses/by-nc-sa/4.0/). """ ;
+                                    <http://purl.org/dc/terms/publisher> "Ichise Laboratory, National Insititute of Informatics" ;
+                                    rdfs:label "Car Ontology" ;
+                                    rdfs:seeAlso "http://ceur-ws.org/Vol-1486/paper_9.pdf" ,
+                                                 "http://ceur-ws.org/Vol-1690/paper44.pdf" ,
+                                                 "http://doi.org/10.1587/transinf.2016EDP7337" ;
+                                    owl:versionInfo "Kyutech-NII-TTI Core: Car Ontology (v0.04)" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#mm
+<http://ri-www.nii.ac.jp/ADAS/sensor#mm> rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://ri-www.nii.ac.jp/ADAS/Car#currentPath
+:currentPath rdf:type owl:ObjectProperty .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/Car#isRunningOn
+:isRunningOn rdf:type owl:ObjectProperty .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/Car#usedSensor
+:usedSensor rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://ri-www.nii.ac.jp/ADAS/Car#carID
+:carID rdf:type owl:DatatypeProperty ;
+       rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/Car#distance_back
+:distance_back rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/Car#distance_front
+:distance_front rdf:type owl:DatatypeProperty .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/Car#velocity
+:velocity rdf:type owl:DatatypeProperty .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#brake
+<http://ri-www.nii.ac.jp/ADAS/sensor#brake> rdf:type owl:DatatypeProperty ;
+                                            rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#car_height
+<http://ri-www.nii.ac.jp/ADAS/sensor#car_height> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf owl:topDataProperty ;
+                                                 rdfs:domain <http://ri-www.nii.ac.jp/ADAS/sensor#Car> ;
+                                                 rdfs:range <http://ri-www.nii.ac.jp/ADAS/sensor#mm> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#car_length
+<http://ri-www.nii.ac.jp/ADAS/sensor#car_length> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf owl:topDataProperty ;
+                                                 rdfs:domain <http://ri-www.nii.ac.jp/ADAS/sensor#Car> ;
+                                                 rdfs:range <http://ri-www.nii.ac.jp/ADAS/sensor#mm> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#car_model
+<http://ri-www.nii.ac.jp/ADAS/sensor#car_model> rdf:type owl:DatatypeProperty ;
+                                                rdfs:subPropertyOf owl:topDataProperty ;
+                                                rdfs:domain <http://ri-www.nii.ac.jp/ADAS/sensor#Car> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#front_overhang
+<http://ri-www.nii.ac.jp/ADAS/sensor#front_overhang> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:subPropertyOf owl:topDataProperty ;
+                                                     rdfs:domain <http://ri-www.nii.ac.jp/ADAS/sensor#Car> ;
+                                                     rdfs:range <http://ri-www.nii.ac.jp/ADAS/sensor#mm> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#gear
+<http://ri-www.nii.ac.jp/ADAS/sensor#gear> rdf:type owl:DatatypeProperty ;
+                                           rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#height_max
+<http://ri-www.nii.ac.jp/ADAS/sensor#height_max> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#rear_overhang
+<http://ri-www.nii.ac.jp/ADAS/sensor#rear_overhang> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:subPropertyOf owl:topDataProperty ;
+                                                    rdfs:domain <http://ri-www.nii.ac.jp/ADAS/sensor#Car> ;
+                                                    rdfs:range <http://ri-www.nii.ac.jp/ADAS/sensor#mm> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#steer_angle
+<http://ri-www.nii.ac.jp/ADAS/sensor#steer_angle> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#throttle
+<http://ri-www.nii.ac.jp/ADAS/sensor#throttle> rdf:type owl:DatatypeProperty ;
+                                               rdfs:subPropertyOf owl:topDataProperty .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#wheel_base
+<http://ri-www.nii.ac.jp/ADAS/sensor#wheel_base> rdf:type owl:DatatypeProperty ;
+                                                 rdfs:subPropertyOf owl:topDataProperty ;
+                                                 rdfs:domain <http://ri-www.nii.ac.jp/ADAS/sensor#Car> ;
+                                                 rdfs:range <http://ri-www.nii.ac.jp/ADAS/sensor#mm> .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://ri-www.nii.ac.jp/ADAS/Car#Acceleration
+:Acceleration rdf:type owl:Class ;
+              rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/Car#Deceleration
+:Deceleration rdf:type owl:Class ;
+              rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/Car#MyCar
+:MyCar rdf:type owl:Class ;
+       rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/Car#RegularVehicle
+:RegularVehicle rdf:type owl:Class ;
+                rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#Automobile> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/Car#SpecialVehicle
+:SpecialVehicle rdf:type owl:Class ;
+                rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#Automobile> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#Automobile
+<http://ri-www.nii.ac.jp/ADAS/sensor#Automobile> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#Bicycle
+<http://ri-www.nii.ac.jp/ADAS/sensor#Bicycle> rdf:type owl:Class ;
+                                              rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#Bus
+<http://ri-www.nii.ac.jp/ADAS/sensor#Bus> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#Automobile> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#CAN
+<http://ri-www.nii.ac.jp/ADAS/sensor#CAN> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#Sensor> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#Camera
+<http://ri-www.nii.ac.jp/ADAS/sensor#Camera> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#Sensor> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#Car
+<http://ri-www.nii.ac.jp/ADAS/sensor#Car> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#CarParts
+<http://ri-www.nii.ac.jp/ADAS/sensor#CarParts> rdf:type owl:Class .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#ConstantSpeed
+<http://ri-www.nii.ac.jp/ADAS/sensor#ConstantSpeed> rdf:type owl:Class ;
+                                                    rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#Engine
+<http://ri-www.nii.ac.jp/ADAS/sensor#Engine> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#CarParts> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#GPS
+<http://ri-www.nii.ac.jp/ADAS/sensor#GPS> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#Sensor> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#GPSTrack
+<http://ri-www.nii.ac.jp/ADAS/sensor#GPSTrack> rdf:type owl:Class ;
+                                               rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#Path> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#LargeSpecialVehicle
+<http://ri-www.nii.ac.jp/ADAS/sensor#LargeSpecialVehicle> rdf:type owl:Class ;
+                                                          rdfs:subClassOf :SpecialVehicle .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#Lidar
+<http://ri-www.nii.ac.jp/ADAS/sensor#Lidar> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#Sensor> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#Motorcycle
+<http://ri-www.nii.ac.jp/ADAS/sensor#Motorcycle> rdf:type owl:Class ;
+                                                 rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar
+<http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar> rdf:type owl:Class ;
+                                                   rdfs:subClassOf :RegularVehicle .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#Path
+<http://ri-www.nii.ac.jp/ADAS/sensor#Path> rdf:type owl:Class ;
+                                           rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#Sensor
+<http://ri-www.nii.ac.jp/ADAS/sensor#Sensor> rdf:type owl:Class ;
+                                             rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#CarParts> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#SmallSpecialVehicle
+<http://ri-www.nii.ac.jp/ADAS/sensor#SmallSpecialVehicle> rdf:type owl:Class ;
+                                                          rdfs:subClassOf :SpecialVehicle .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#SmoothAcceleration
+<http://ri-www.nii.ac.jp/ADAS/sensor#SmoothAcceleration> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Acceleration .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#SmoothDeceleration
+<http://ri-www.nii.ac.jp/ADAS/sensor#SmoothDeceleration> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Deceleration .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#Sonar
+<http://ri-www.nii.ac.jp/ADAS/sensor#Sonar> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#Sensor> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile
+<http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile> rdf:type owl:Class ;
+                                                   rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#SuddenAcceleration
+<http://ri-www.nii.ac.jp/ADAS/sensor#SuddenAcceleration> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Acceleration .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#SuddenDeceleration
+<http://ri-www.nii.ac.jp/ADAS/sensor#SuddenDeceleration> rdf:type owl:Class ;
+                                                         rdfs:subClassOf :Deceleration .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory
+<http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory> rdf:type owl:Class .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#Truck
+<http://ri-www.nii.ac.jp/ADAS/sensor#Truck> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://ri-www.nii.ac.jp/ADAS/sensor#Automobile> .
+
+
+###  http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle
+<http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/

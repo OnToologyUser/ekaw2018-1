@@ -1,0 +1,12 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<http://ri-www.nii.ac.jp/ADAS/Car/0.04> a prov:Entity;
+	 prov:wasAttributedTo :agent0;
+	 prov:wasAttributedTo :agent1;
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+.
+:agent0 a prov:Agent; foaf:name "Dr. Lihua Zhao, Postdoctoral researcher (TTI)
+			Dr. Yutaka Sasaki, Director & Professor (TTI)".
+:agent1 a prov:Agent; foaf:name "Dr. Hiroaki Wagatsuma, Associate Professor (Kyutech)
+			Dr. Ryutaro Ichise, Associate Professor (NII)".

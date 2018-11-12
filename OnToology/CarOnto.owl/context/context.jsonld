@@ -1,0 +1,186 @@
+{
+  "@context" : {
+    "ConstantSpeed" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#ConstantSpeed"
+    },
+    "currentPath" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/Car#currentPath",
+      "@type" : "@id"
+    },
+    "usedSensor" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/Car#usedSensor",
+      "@type" : "@id"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Lidar" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#Lidar"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Trajectory" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory"
+    },
+    "brake" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#brake"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "Automobile" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#Automobile"
+    },
+    "SmoothAcceleration" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#SmoothAcceleration"
+    },
+    "Path" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#Path"
+    },
+    "PassengerCar" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar"
+    },
+    "wheel_base" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#wheel_base",
+      "@type" : "http://ri-www.nii.ac.jp/ADAS/sensor#mm"
+    },
+    "LargeSpecialVehicle" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#LargeSpecialVehicle"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "car_height" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#car_height",
+      "@type" : "http://ri-www.nii.ac.jp/ADAS/sensor#mm"
+    },
+    "Bus" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#Bus"
+    },
+    "GPS" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#GPS"
+    },
+    "Deceleration" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/Car#Deceleration"
+    },
+    "front_overhang" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#front_overhang",
+      "@type" : "http://ri-www.nii.ac.jp/ADAS/sensor#mm"
+    },
+    "CAN" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#CAN"
+    },
+    "SpeedProfile" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile"
+    },
+    "height_max" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#height_max"
+    },
+    "gear" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#gear"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "Bicycle" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#Bicycle"
+    },
+    "Car" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#Car"
+    },
+    "MyCar" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/Car#MyCar"
+    },
+    "Motorcycle" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#Motorcycle"
+    },
+    "Acceleration" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/Car#Acceleration"
+    },
+    "SuddenDeceleration" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#SuddenDeceleration"
+    },
+    "rear_overhang" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#rear_overhang",
+      "@type" : "http://ri-www.nii.ac.jp/ADAS/sensor#mm"
+    },
+    "Truck" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#Truck"
+    },
+    "SmallSpecialVehicle" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#SmallSpecialVehicle"
+    },
+    "car_length" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#car_length",
+      "@type" : "http://ri-www.nii.ac.jp/ADAS/sensor#mm"
+    },
+    "SuddenAcceleration" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#SuddenAcceleration"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "CarParts" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#CarParts"
+    },
+    "SmoothDeceleration" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#SmoothDeceleration"
+    },
+    "car_model" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#car_model"
+    },
+    "steer_angle" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#steer_angle"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "isRunningOn" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/Car#isRunningOn",
+      "@type" : "@id"
+    },
+    "SpecialVehicle" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/Car#SpecialVehicle"
+    },
+    "Camera" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#Camera"
+    },
+    "Engine" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#Engine"
+    },
+    "distance_front" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/Car#distance_front"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/elements/1.1/contributor"
+    },
+    "carID" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/Car#carID"
+    },
+    "throttle" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#throttle"
+    },
+    "Vehicle" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle"
+    },
+    "RegularVehicle" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/Car#RegularVehicle"
+    },
+    "Sonar" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#Sonar"
+    },
+    "GPSTrack" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#GPSTrack"
+    },
+    "velocity" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/Car#velocity"
+    },
+    "distance_back" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/Car#distance_back"
+    },
+    "Sensor" : {
+      "@id" : "http://ri-www.nii.ac.jp/ADAS/sensor#Sensor"
+    }
+  }
+}
