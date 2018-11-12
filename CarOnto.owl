@@ -1,0 +1,497 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://ri-www.nii.ac.jp/ADAS/Car#"
+	xml:base="http://ri-www.nii.ac.jp/ADAS/Car"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:car="http://ri-www.nii.ac.jp/ADAS/Car#"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<owl:Ontology rdf:about="http://ri-www.nii.ac.jp/ADAS/Car">
+		<owl:versionIRI rdf:resource="http://ri-www.nii.ac.jp/ADAS/Car/0.04"/>
+		<owl:versionInfo>Kyutech-NII-TTI Core: Car Ontology (v0.04)</owl:versionInfo>
+		<dcterms:creator>Dr. Lihua Zhao, Postdoctoral researcher (TTI)
+			Dr. Yutaka Sasaki, Director &amp; Professor (TTI)</dcterms:creator>
+		<dc:contributor>Dr. Hiroaki Wagatsuma, Associate Professor (Kyutech)
+			Dr. Ryutaro Ichise, Associate Professor (NII)</dc:contributor>
+		<dcterms:publisher>Ichise Laboratory, National Insititute of Informatics</dcterms:publisher>
+		<dcterms:license>Copyright (C) 2015 Computational Intelligence Laboratory,
+			Toyota Technological Institute, Nagoya, Japan./
+			On Modified Part: Copyright (C) 2016 Graduate School of Life Science and Systems Engineering,
+			Kyushu Institute of Technology, Kitakyushu, Japan &amp; Ichise Laboratory, National Institute of Informatics, Tokyo, Japan
+
+			This work is licensed under Creative Commons - Attribution-NonCommercial-ShareAlike
+			4.0 International (http://creativecommons.org/licenses/by-nc-sa/4.0/). </dcterms:license>
+		<rdfs:label>Car Ontology</rdfs:label>
+		<rdfs:seeAlso>http://doi.org/10.1587/transinf.2016EDP7337</rdfs:seeAlso>
+		<rdfs:seeAlso>http://ceur-ws.org/Vol-1690/paper44.pdf</rdfs:seeAlso>
+		<rdfs:seeAlso>http://ceur-ws.org/Vol-1486/paper_9.pdf</rdfs:seeAlso>
+	</owl:Ontology>
+
+
+
+	<!-- 
+		///////////////////////////////////////////////////////////////////////////////////////
+		//
+		// Annotation properties
+		//
+		///////////////////////////////////////////////////////////////////////////////////////
+	 -->
+
+
+
+
+	<!-- http://purl.org/dc/elements/1.1/contributor -->
+
+	<owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+
+
+
+	<!-- 
+		///////////////////////////////////////////////////////////////////////////////////////
+		//
+		// Datatypes
+		//
+		///////////////////////////////////////////////////////////////////////////////////////
+	 -->
+
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#mm -->
+
+	<rdfs:Datatype rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#mm"/>
+
+
+
+	<!-- 
+		///////////////////////////////////////////////////////////////////////////////////////
+		//
+		// Object Properties
+		//
+		///////////////////////////////////////////////////////////////////////////////////////
+	 -->
+
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/Car#currentPath -->
+
+	<owl:ObjectProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/Car#currentPath"/>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/Car#isRunningOn -->
+
+	<owl:ObjectProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/Car#isRunningOn"/>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/Car#usedSensor -->
+
+	<owl:ObjectProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/Car#usedSensor"/>
+
+
+
+	<!-- 
+		///////////////////////////////////////////////////////////////////////////////////////
+		//
+		// Data properties
+		//
+		///////////////////////////////////////////////////////////////////////////////////////
+	 -->
+
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/Car#carID -->
+
+	<owl:DatatypeProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/Car#carID">
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/Car#distance_back -->
+
+	<owl:DatatypeProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/Car#distance_back">
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/Car#distance_front -->
+
+	<owl:DatatypeProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/Car#distance_front"/>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/Car#velocity -->
+
+	<owl:DatatypeProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/Car#velocity"/>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#brake -->
+
+	<owl:DatatypeProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#brake">
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#car_height -->
+
+	<owl:DatatypeProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#car_height">
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+		<rdfs:domain rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Car"/>
+		<rdfs:range rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#mm"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#car_length -->
+
+	<owl:DatatypeProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#car_length">
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+		<rdfs:domain rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Car"/>
+		<rdfs:range rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#mm"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#car_model -->
+
+	<owl:DatatypeProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#car_model">
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+		<rdfs:domain rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Car"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#front_overhang -->
+
+	<owl:DatatypeProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#front_overhang">
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+		<rdfs:domain rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Car"/>
+		<rdfs:range rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#mm"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#gear -->
+
+	<owl:DatatypeProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#gear">
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#height_max -->
+
+	<owl:DatatypeProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#height_max">
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#rear_overhang -->
+
+	<owl:DatatypeProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#rear_overhang">
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+		<rdfs:domain rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Car"/>
+		<rdfs:range rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#mm"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#steer_angle -->
+
+	<owl:DatatypeProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#steer_angle">
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#throttle -->
+
+	<owl:DatatypeProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#throttle">
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#wheel_base -->
+
+	<owl:DatatypeProperty rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#wheel_base">
+		<rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+		<rdfs:domain rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Car"/>
+		<rdfs:range rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#mm"/>
+	</owl:DatatypeProperty>
+
+
+
+	<!-- 
+		///////////////////////////////////////////////////////////////////////////////////////
+		//
+		// Classes
+		//
+		///////////////////////////////////////////////////////////////////////////////////////
+	 -->
+
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/Car#Acceleration -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/Car#Acceleration">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/Car#Deceleration -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/Car#Deceleration">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/Car#MyCar -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/Car#MyCar">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/Car#RegularVehicle -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/Car#RegularVehicle">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Automobile"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/Car#SpecialVehicle -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/Car#SpecialVehicle">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Automobile"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#Automobile -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#Automobile">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#Bicycle -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#Bicycle">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#Bus -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#Bus">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Automobile"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#CAN -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#CAN">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Sensor"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#Camera -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#Camera">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Sensor"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#Car -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#Car">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#CarParts -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#CarParts"/>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#ConstantSpeed -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#ConstantSpeed">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#Engine -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#Engine">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#CarParts"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#GPS -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#GPS">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Sensor"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#GPSTrack -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#GPSTrack">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Path"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#LargeSpecialVehicle -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#LargeSpecialVehicle">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/Car#SpecialVehicle"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#Lidar -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#Lidar">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Sensor"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#Motorcycle -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#Motorcycle">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#PassengerCar">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/Car#RegularVehicle"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#Path -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#Path">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#Sensor -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#Sensor">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#CarParts"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#SmallSpecialVehicle -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#SmallSpecialVehicle">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/Car#SpecialVehicle"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#SmoothAcceleration -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#SmoothAcceleration">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/Car#Acceleration"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#SmoothDeceleration -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#SmoothDeceleration">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/Car#Deceleration"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#Sonar -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#Sonar">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Sensor"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#SpeedProfile">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#SuddenAcceleration -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#SuddenAcceleration">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/Car#Acceleration"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#SuddenDeceleration -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#SuddenDeceleration">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/Car#Deceleration"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#Trajectory"/>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#Truck -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#Truck">
+		<rdfs:subClassOf rdf:resource="http://ri-www.nii.ac.jp/ADAS/sensor#Automobile"/>
+	</owl:Class>
+
+
+
+	<!-- http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle -->
+
+	<owl:Class rdf:about="http://ri-www.nii.ac.jp/ADAS/sensor#Vehicle"/>
+
+</rdf:RDF>
+
+
